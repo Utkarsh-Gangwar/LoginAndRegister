@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        table{
+            border: 1px solid black;
+            background-color: blue;
+            color: blanchedalmond;
+        }
         div{
             width: 60%;
             float: right;
@@ -15,32 +20,41 @@
 <body>
     <div>
         <form action="login.html">
-            <input type="text" placeholder="First Name">
-            <br>
-            <br>
-            <input type="text" placeholder="Last Name">
-            <br>
-            <br>
-            <input type="password" placeholder="password">
-            <br>
-            <br>
-            <input type="password" placeholder="confirm password">
-            <br>
-            <br>
-            <p>Select your favorite Language:</p>
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
-            <br>
-            <br>
-            <button>Register</button>
+            <table>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="password" placeholder="confirm password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>Select your favorite Language:</p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">HTML</label><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">CSS</label><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">JavaScript</label></td>
+                </tr>
+                <tr>
+                    <td><button>Register</button></td>
+                    <td><button><a href="index.html" style="text-decoration: none; color: black;">Login</a></button>
+                    </td>
+                </tr>
+            </table>
         </form>
-        
-        <br>
-        <button><a href="index.html" style="text-decoration: none;">Login</a></button>
     </div>
 </body>
 </html>
