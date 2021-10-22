@@ -8,8 +8,7 @@
     <title>Document</title>
     <style>
         div{
-            margin: auto;
-            border: 10px solid black;
+            margin: 50px 400px 50px 400px;
             height: 80vh;
         }
         input{
@@ -18,20 +17,27 @@
         button{
             margin: 10px;
         }
+        table{
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
     <div>
-        <center>
-            <form action="Registration.html">
-            <input type="text" placeholder="User id">
-            <br>
-            <input type="text" placeholder="Pasword">
-            <br>
-            <button>Register</button>
+        <form action="Registration.html">
+            <table>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="User id"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" placeholder="Pasword"></td>
+                </tr>
+                <tr>
+                    <td><button>Register</button></td>
+                    <td><button><a href="login.html" style="text-decoration: none;">Login</a></button></td>
+                </tr>
+            </table>
         </form>
-            <button><a href="login.html" style="text-decoration: none;">Login</a></button>
-        </center>
     </div>
 </body>
 </html>
