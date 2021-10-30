@@ -8,36 +8,50 @@
     <title>Document</title>
     <style>
         div{
-            margin: 50px 400px 50px 400px;
+            padding: 30px;
+            margin: 30px;
+            background-color: rgb(47, 0, 255);
+            color: aliceblue;
         }
         input{
             margin: 10px;
         }
         button{
-            margin: 10px;
+            background-color: greenyellow;
+            border-radius: 10px;
         }
         table{
             border: 1px solid black;
-            background-color: blue;
+            background-color: rgb(67, 67, 180);
+        }
+        th{
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
+    <center>
     <div>
         <form action="Registration.html">
             <table>
+                <h1>Login Page</h1>
                 <tr>
-                    <td colspan="2"><input type="text" placeholder="User id"></td>
+                    <th>User Id:</th>
+                    <th colspan="2"><input type="text" placeholder="User id"></th>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="text" placeholder="Pasword"></td>
+                    <th>Password :</th>
+                    <th colspan="2"><input type="text" placeholder="Pasword"></th>
                 </tr>
                 <tr>
-                    <td><button>Register</button></td>
-                    <td><button><a href="login.html" style="text-decoration: none; color: black;">Login</a></button></td>
+                    <th><button>Forgot Pasword</button></th>
+                    <th><input type="reset" style="background-color: greenyellow;"></th>
+                    <th><button>Login</button></th>
                 </tr>
             </table>
         </form>
+        <h3>Don't have account?</h3>
+        <button><a href="Registration.html" style="text-decoration: none; color: black;">Register</a></button>
     </div>
 </body>
 </html>
